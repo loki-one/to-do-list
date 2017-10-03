@@ -22,3 +22,8 @@ V4 Requirements:
 1) todoList.addTodo should add objects.
 2) todoList.changeTodo should change the todoText property.
 3) todoList.toggleCompleted should flip the completed property.
+
+V5 Requirements:
+1) displayTodos should show todoText.
+2) displayTodos should tell you if todos is empty.
+3) displayTodos should show completed.
