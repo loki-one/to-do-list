@@ -27,3 +27,7 @@ V5 Requirements:
 1) displayTodos should show todoText.
 2) displayTodos should tell you if todos is empty.
 3) displayTodos should show completed.
+
+V6 Requirements:
+1) toggleAll: If everything's true, make everything false.
+2) toggleAll: Otherwise make everything true.
