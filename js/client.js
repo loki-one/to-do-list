@@ -1,20 +1,19 @@
-var todos = ['item 1', 'item 2', 'item 3'];
+var todoList = {
 
-function displayTodos(){
-    console.log('My todos:',todos);
-}
-
-function addTodo(todo){
-    todos.push(todo);
-    displayTodos();
-}
-
-function changeTodo(position, newTodoValue){
-    todos[position] = newTodoValue;
-    displayTodos();
-}
-
-function deleteTodo(position){
-    todos.splice(position,1);
-    displayTodos();
+    todos : ['item 1', 'item 2', 'item 3'],
+    displayTodos : function(){
+        console.log('My todos:',this.todos);
+    },
+    addTodo : function(todo){
+      this.todos.push(todo);
+      this.displayTodos();
+    },
+    changeTodo : function(position, newTodoValue){
+      this.todos[position] = newTodoValue;
+      this.displayTodos();
+    },
+    deleteTodo : function(position){
+      this.todos.splice(position,1);
+      this.displayTodos();
+    }
 }
