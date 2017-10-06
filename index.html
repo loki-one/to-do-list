@@ -5,8 +5,33 @@
   </head>
   <body>
     <h1>Todo List</h1>
-    <button onclick="handlers.displayTodos()">Display Todos</button>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
+
+    <div>
+        <button onclick="handlers.displayTodos()">Display Todos</button>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+        <button onclick="handlers.addTodo()">Add</button>
+        <input type="text" id="addTodoTextInput"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.changeTodo()">Change</button>
+        <input type="number" id="changeTodoPositionInput"></input>
+        <input type="text" id="changeTodoTextInput"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.deleteTodo()">Delete</button>
+        <input type="number" id="deleteTodoPositionInput"></input>
+    </div>
+
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle</button>
+        <input type="number" id="toggleCompletedPositionInput"></input>
+    </div>
+
     <script src="js/client.js"></script>
   </body>
 </html>
