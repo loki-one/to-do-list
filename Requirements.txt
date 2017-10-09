@@ -42,3 +42,8 @@ V8 Requirements:
 2) There should be a button for changing todos.
 3) There should be a button for deleting todos.
 4) There should be a button for toggling a todo.
+
+V9 Requirements:
+1) There should be an li element for every todo.
+2) Each li element should contain .todoText.
+3) Each li element should show .completed.
