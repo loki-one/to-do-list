@@ -86,8 +86,17 @@ var view = {
       }else{
         todoTextWithCompletion = "( ) "+ todo.todoText;
       }
+
+      todosLi.id = i;
       todosLi.textContent = todoTextWithCompletion;
+      todosLi.appendChild(this.createDeleteButton());
       todosUl.appendChild(todosLi);
     }
+  },
+  createDeleteButton: function(){
+    var deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'deleteButton';
+    return deleteButton;
   }
 };
